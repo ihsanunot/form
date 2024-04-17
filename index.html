@@ -1,32 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Form Field Appropriate</title>
+    <title>Form Field Date</title>
 
     <link rel="stylesheet" href="common.css" />
     <link rel="stylesheet" href="main.css" />
   </head>
   <body>
     <form>
-      <div class="form-group">
-        <label for="name">Nama</label>
-        <input type="text" name="name" id="name" />
-      </div>
-      <div class="form-group">
-        <label for="telephone">Telepon</label>
-        <input type="tel" name="telephone" id="telephone" />
-      </div>
-      <div class="form-group">
-        <label for="email">Email</label>
-        <input type="email" name="email" id="email" />
-      </div>
-      <div class="form-group">
-        <label for="password">Password</label>
-        <input type="password" name="password" id="password" />
-      </div>
+      <fieldset>
+        <legend>Waktu Keberangkatan</legend>
+        <div class="form-group">
+          <label for="departure_date">Tanggal</label>
+          <input type="date" name="departure_date" id="departure_date" />
+        </div>
+        <div class="form-group">
+          <label for="departure_date">Jam</label>
+          <input type="time" name="departure_date" id="departure_date" />
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Waktu Kedatangan</legend>
+        <div class="form-group">
+          <label for="arrival_date">Tanggal</label>
+          <input type="date" name="arrival_date" id="arrival_date" />
+        </div>
+        <div class="form-group">
+          <label for="arrival_date">Jam</label>
+          <input type="time" name="arrival_date" id="arrival_date" />
+        </div>
+      </fieldset>
 
       <div class="form-group">
-        <button class="btn">Daftar</button>
+        <button class="btn">Kirim</button>
       </div>
     </form>
   </body>
