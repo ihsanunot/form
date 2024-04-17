@@ -1,49 +1,39 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
   <head>
-    <title>Form Field Check Radio</title>
+    <title>Form Field Check Select</title>
 
     <link rel="stylesheet" href="common.css" />
-    <link rel="stylesheet" href="main.css" />
+
   </head>
   <body>
     <form>
       <fieldset>
         <legend>Jenis Kelamin</legend>
         <div class="form-group">
-          <input type="radio" name="gender" value="man" id="gender_man" />
+          <input type="radio" name="gender" value="man" id="gender_man" required />
           <label for="gender_man">Laki-laki</label>
         </div>
         <div class="form-group">
-          <input type="radio" name="gender" value="woman" id="gender_woman" />
+          <input type="radio" name="gender" value="woman" id="gender_woman" required />
           <label for="gender_woman">Perempuan</label>
         </div>
       </fieldset>
 
-      <fieldset>
-        <legend>Hobi</legend>
-        <div class="form-group">
-          <input type="checkbox" name="hobbies" value="sport" id="hobby_sport" />
-          <label for="hobby_sport">Olahraga</label>
-        </div>
-        <div class="form-group">
-          <input
-            type="checkbox"
-            name="hobbies"
-            value="reading_book"
-            id="hobby_reading_book"
-          />
-          <label for="hobby_reading_book">Membaca buku</label>
-        </div>
-        <div class="form-group">
-          <input type="checkbox" name="hobbies" value="traveling" id="hobby_traveling" />
-          <label for="hobby_traveling">Bepergian</label>
-        </div>
-        <div class="form-group">
-          <input type="checkbox" name="hobbies" value="culinary" id="hobby_culinary" />
-          <label for="hobby_culinary">Kulineran</label>
-        </div>
-      </fieldset>
+      <div class="form-group">
+        <label for="hobbies">Hobi</label>
+        <select name="hobbies" id="hobbies" required>
+          <option value="" disabled selected>Pilih salah satu</option>
+          <option value="sport">Olahraga</option>
+          <option value="reading_book">Membaca buku</option>
+          <option value="traveling">Bepergian</option>
+          <option value="culinary">Kulineran</option>
+          <option value="gardening">Berkebun</option>
+          <option value="bicycling">Bersepeda</option>
+          <option value="photography">Fotografi</option>
+          <option value="cooking">Memasak</option>
+        </select>
+      </div>
 
       <div class="form-group">
         <button class="btn">Kirim</button>
