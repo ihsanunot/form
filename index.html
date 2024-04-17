@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang="id">
   <head>
-    <title>Form Field Text</title>
+    <title>Form Field Textarea</title>
+
     <link rel="stylesheet" href="common.css" />
+    <link rel="stylesheet" href="main.css" />
   </head>
   <body>
     <form>
@@ -10,9 +12,13 @@
         <label for="name">Nama</label>
         <input type="text" name="name" id="name" />
       </div>
-
       <div class="form-group">
-        <button class="btn">Kirim</button>
+        <label for="subject">Subjek</label>
+        <input type="text" name="subject" id="subject" />
+      </div>
+      <div class="form-group">
+        <label for="message">Pesan</label>
+        <textarea name="message" id="message"></textarea>
       </div>
     </form>
   </body>
