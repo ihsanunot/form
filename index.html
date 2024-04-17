@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
   <head>
-    <title>Form Field Date</title>
+    <title>Form Field Check Radio</title>
 
     <link rel="stylesheet" href="common.css" />
     <link rel="stylesheet" href="main.css" />
@@ -9,25 +9,39 @@
   <body>
     <form>
       <fieldset>
-        <legend>Waktu Keberangkatan</legend>
+        <legend>Jenis Kelamin</legend>
         <div class="form-group">
-          <label for="departure_date">Tanggal</label>
-          <input type="date" name="departure_date" id="departure_date" />
+          <input type="radio" name="gender" value="man" id="gender_man" />
+          <label for="gender_man">Laki-laki</label>
         </div>
         <div class="form-group">
-          <label for="departure_date">Jam</label>
-          <input type="time" name="departure_date" id="departure_date" />
+          <input type="radio" name="gender" value="woman" id="gender_woman" />
+          <label for="gender_woman">Perempuan</label>
         </div>
       </fieldset>
+
       <fieldset>
-        <legend>Waktu Kedatangan</legend>
+        <legend>Hobi</legend>
         <div class="form-group">
-          <label for="arrival_date">Tanggal</label>
-          <input type="date" name="arrival_date" id="arrival_date" />
+          <input type="checkbox" name="hobbies" value="sport" id="hobby_sport" />
+          <label for="hobby_sport">Olahraga</label>
         </div>
         <div class="form-group">
-          <label for="arrival_date">Jam</label>
-          <input type="time" name="arrival_date" id="arrival_date" />
+          <input
+            type="checkbox"
+            name="hobbies"
+            value="reading_book"
+            id="hobby_reading_book"
+          />
+          <label for="hobby_reading_book">Membaca buku</label>
+        </div>
+        <div class="form-group">
+          <input type="checkbox" name="hobbies" value="traveling" id="hobby_traveling" />
+          <label for="hobby_traveling">Bepergian</label>
+        </div>
+        <div class="form-group">
+          <input type="checkbox" name="hobbies" value="culinary" id="hobby_culinary" />
+          <label for="hobby_culinary">Kulineran</label>
         </div>
       </fieldset>
 
