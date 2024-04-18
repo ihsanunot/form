@@ -1,38 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Form Field Check Select</title>
+    <title>Attribute Type | Attribute</title>
 
     <link rel="stylesheet" href="common.css" />
-
+    <link rel="stylesheet" href="main.css" />
   </head>
   <body>
     <form>
-      <fieldset>
-        <legend>Jenis Kelamin</legend>
-        <div class="form-group">
-          <input type="radio" name="gender" value="man" id="gender_man" required />
-          <label for="gender_man">Laki-laki</label>
-        </div>
-        <div class="form-group">
-          <input type="radio" name="gender" value="woman" id="gender_woman" required />
-          <label for="gender_woman">Perempuan</label>
-        </div>
-      </fieldset>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" />
+      </div>
 
       <div class="form-group">
-        <label for="hobbies">Hobi</label>
-        <select name="hobbies" id="hobbies" required>
-          <option value="" disabled selected>Pilih salah satu</option>
-          <option value="sport">Olahraga</option>
-          <option value="reading_book">Membaca buku</option>
-          <option value="traveling">Bepergian</option>
-          <option value="culinary">Kulineran</option>
-          <option value="gardening">Berkebun</option>
-          <option value="bicycling">Bersepeda</option>
-          <option value="photography">Fotografi</option>
-          <option value="cooking">Memasak</option>
-        </select>
+        <label for="personal_website">Personal Website</label>
+        <input type="url" name="personal_website" id="personal_website" />
       </div>
 
       <div class="form-group">
