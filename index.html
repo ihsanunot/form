@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
   <head>
-    <title>Min Max Validation</title>
+    <title>Custom Validation With Specific Constraint</title>
 
     <link rel="stylesheet" href="common.css" />
     <link rel="stylesheet" href="main.css" />
@@ -9,30 +9,54 @@
   <body>
     <form>
       <div class="form-group">
-        <label for="fruitType">
-          Pilih buah favorit Anda
-          <span aria-label="required">*</span>
-        </label>
-        <input type="text" id="fruitType" name="fruitType" required />
-      </div>
-      <div class="form-group">
-        <label for="amount">Jumlah buah</label>
+        <label for="username">Username</label>
         <input
-          type="number"
-          id="amount"
-          name="amount"
-          value="1"
-          min="1"
-          max="10"
-          step="2"
+          type="text"
+          id="username"
+          name="username"
           required
+          pattern="^(?![_.])(?!.*[_.]{2})[a-zA-Z0-9._]+(?<![_.])$"
+          minlength="6"
           autocomplete="off"
         />
       </div>
 
       <div class="form-group">
-        <button class="btn">Bayar</button>
+        <button class="btn">Kirim</button>
       </div>
     </form>
+
+    <script src="main.js"></script>
+  </body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Custom Validation With Specific Constraint</title>
+
+    <link rel="stylesheet" href="common.css" />
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <form>
+      <div class="form-group">
+        <label for="username">Username</label>
+        <input
+          type="text"
+          id="username"
+          name="username"
+          required
+          pattern="^(?![_.])(?!.*[_.]{2})[a-zA-Z0-9._]+(?<![_.])$"
+          minlength="6"
+          autocomplete="off"
+        />
+      </div>
+
+      <div class="form-group">
+        <button class="btn">Kirim</button>
+      </div>
+    </form>
+
+    <script src="main.js"></script>
   </body>
 </html>
