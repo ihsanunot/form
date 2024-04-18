@@ -1,64 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Attribute Input Mode</title>
+    <title>Step Validation</title>
 
     <link rel="stylesheet" href="common.css" />
     <link rel="stylesheet" href="main.css" />
   </head>
   <body>
-    <main>
-      <form>
-        <div class="form-group">
-          <label for="name">Nama</label>
-          <input type="text" id="name" name="name" autocomplete="cc-name" required />
-        </div>
-        <div class="form-group">
-          <label>Card number</label>
-          <input
-            type="text"
-            inputmode="numeric"
-            id="card-number"
-            name="card-number"
-            autocomplete="cc-number"
-            required
-            pattern="[0-9]+"
-          />
-        </div>
-        <div class="form-group date-code">
-          <div>
-            <label for="expiry-date">Expiry date</label>
-            <input
-              type="text"
-              id="expiry-date"
-              class="expiry-date"
-              name="expiry-date"
-              autocomplete="cc-exp"
-              required
-              placeholder="MM/YY"
-              minlength="4"
-              pattern="[0-9/]+"
-            />
-          </div>
-          <div>
-            <label for="security-code">Security code</label>
-            <input
-              type="text"
-              inputmode="numeric"
-              id="security-code"
-              name="security-code"
-              required
-              minlength="3"
-              maxlength="4"
-              pattern="[0-9]+"
-            />
-          </div>
-        </div>
+    <form>
+      <div class="form-group">
+        <label for="fruitType">
+          Pilih buah favorit Anda
+          <span aria-label="required">*</span>
+        </label>
+        <input type="text" id="fruitType" name="fruitType" required />
+      </div>
+      <div class="form-group">
+        <label for="amount">Jumlah buah</label>
+        <input
+          type="number"
+          id="amount"
+          name="amount"
+          value="1"
+          min="1"
+          max="10"
+          step="2"
+          required
+          autocomplete="off"
+        />
+      </div>
 
-        <div class="form-group">
-          <button class="btn">Bayar Sekarang</button>
-        </div>
-      </form>
-    </main>
+      <div class="form-group">
+        <button class="btn">Beli Sekarang</button>
+      </div>
+    </form>
   </body>
 </html>
